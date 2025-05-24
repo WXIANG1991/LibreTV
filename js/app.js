@@ -1180,7 +1180,7 @@ function toggleEpisodeOrder(sourceCode, vodId) {
     // 更新按钮文本和箭头方向
     const toggleBtn = document.querySelector(`button[onclick="toggleEpisodeOrder('${sourceCode}', '${vodId}')"]`);
     if (toggleBtn) {
-        toggleBtn.querySelector('span').textContent = episodesReversed ? '正序排列' : '倒序排列';
+        toggleBtn.querySelector('span').textContent = episodesReversed ? '' : '';
         const arrowIcon = toggleBtn.querySelector('svg');
         if (arrowIcon) {
             arrowIcon.style.transform = episodesReversed ? 'rotate(180deg)' : 'rotate(0deg)';
