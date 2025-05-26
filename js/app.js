@@ -1034,7 +1034,7 @@ async function showDetails(id, vod_name, sourceCode) {
                             <svg class="w-4 h-4 transform ${episodesReversed ? 'rotate-180' : ''}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                             </svg>
-                            <span>${episodesReversed ? '正序排列' : '倒序排列'}</span>
+                            <span>${episodesReversed ? '' : ''}</span>
                         </button>
                         <span class="text-gray-400 text-sm">共 ${data.episodes.length} 集</span>
                     </div>
@@ -1042,7 +1042,7 @@ async function showDetails(id, vod_name, sourceCode) {
                         复制链接
                     </button>
                 </div>
-                <div id="episodesGrid" class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-2">
+                <div id="episodesGrid" class="grid grid-cols-5 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-2">
                     ${renderEpisodes(vod_name, sourceCode, id)}
                 </div>
             `;
