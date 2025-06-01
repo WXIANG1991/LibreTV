@@ -597,7 +597,7 @@ function showTagManageModal() {
         <div class="bg-[#191919] rounded-lg p-6 max-w-md w-full max-h-[90vh] overflow-y-auto relative">
             <button id="closeTagModal" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl">&times;</button>
             
-            <h3 class="text-xl font-bold text-white mb-4">标签管理 (${isMovie ? '电影' : '电视剧'})</h3>
+            <h3 class="text-xl font-bold text-white mb-4"> (${isMovie ? '电影' : '电视剧'})</h3>
             
             <div class="mb-4">
                 <div class="flex justify-between items-center mb-2">
